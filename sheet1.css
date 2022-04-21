@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Ubuntu:wght@300&display=swap');
+:root{
+    --main-bg-color:#2455f4;
+    --main-color:white;
+}
+footer{
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    text-align: center;
+    padding-top : 32px;
+    height: 11vh;
+    font-family: 'Beau Rivage', cursive;
+}
+header{
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    
+    padding: 0px 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(45, 28, 204);
+    padding: 5px;
+}
+ul li a:hover{
+    font-weight: bold;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    transition: .5s;   
+}
+li{
+    display: inline-block;
+    padding: 0px 12px;
+    font-family: 'Beau Rivage', cursive;
+}
+ul li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+}
+nav{
+    display: flex;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   
+}
+.logo img{
+    width: 88px;
+    padding: 0px 10px ;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    padding: 10px;
+    margin: 0px 12px;
+    border-radius: 2px;
+}
+
+
+.btn{
+    background-color: var(--main-bg-color);
+color: white;
+border: 2px solid white;
+border-radius: 8px;
+width: 80px;
+height: 30px;
+cursor: pointer;
+}
+.btn:hover{
+    font-weight: bolder;
+    color: #9cb2fb;
+}
+.container{
+    min-height: 72vh;
+    background-color: rgb(230, 230, 230);
+}
+ .slider
+{
+    display: flex;
+justify-content: center;
+padding-top: 10px;
+overflow: hidden;
+}
+/* .slider img{
+   
+} */
+.slider img:hover{
+    border: 2px white;
+    box-shadow: 2px 2px 10px 5px rgb(161, 161, 224);
+    height: 200px;
+    width: 700px;
+}
+.card{
+    background-color: white;
+max-width: 1488px;
+margin: 10px;
+padding: 10px;
+
+}
+.card h1{
+     margin: 20px 0px;
+     font-family: 'Beau Rivage', cursive;
+}
+.cart-items
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px 5px 0px; 
+} 
+.container1{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+.lines{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    margin: 5px 0px 2px 40px;
+}
+.cart-items img:hover{
+    cursor: pointer;
+    /* font-weight: bolder; */
+    /* border: 2px solid white; */
+    height: 175px;
+    width: 175px;
+    box-shadow: 4px 4px 10px 5px rgba(34, 83, 206, 0.448);
+}
+ @media screen and (max-width:700px) {
+   nav{
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+   }
+   .logo {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   padding-top: 15px; 
+} 
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ ul{
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    
+    /* height: 10vh; */
+}
+.slider img:hover{
+    
+    box-shadow: 2px 2px 10px 5px rgb(116, 116, 231);
+    height: 400px;
+    width: 1400px;
+}
+}
